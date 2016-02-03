@@ -1,9 +1,9 @@
-{% extends './common/base.html' %}
+{% extends 'page/common/base.html' %}
 
 {% block title %}{{title}}{% endblock %} 
 
 {% block link %}
-<link rel="stylesheet" href="/static/css/index.less">
+<link rel="stylesheet" href="/static/css/index.css">
 {% endblock %} 
 
 {% block content %}
@@ -14,6 +14,7 @@
 </div>
 
 <div class="ajax_btn">ajax模拟测试</div>
+<div class="ajax_data"></div>
 {% endblock %}
 
 {% block script %}
