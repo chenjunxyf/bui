@@ -1,0 +1,21 @@
+# 当前模块静态资源和模板的实际上线路径
+# 每个模块根据实际的业务需求来确定资源和模板目录
+
+# 静态资源路径列表
+ONLINE_RESOURCE_DIRS=(
+    # 原始CDN目录，大部分业务的静态资源目录
+    "/opt/tiger/ss_site/webroot"
+    # 额外CDN目录
+    #"/opt/tiger/toutiao/webroot"
+    #"/opt/tiger/site_fe"
+)
+
+# 模板路径列表
+ONLINE_TEMPLATE_DIRS=(
+    # 话题问答业务及其以后的新业务模板位置
+    "/opt/tiger/toutiao/templates"
+    # 大部分老业务模板位置
+    "/opt/tiger/ss_site/djangosite/templates"
+    # 话题关心搜索业务模板位置
+    "/opt/tiger/site_fe"
+)
