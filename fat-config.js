@@ -9,11 +9,13 @@ module.exports = {
             name: '推荐页',
             rule: /\/ttdiscuss\/v1\/brow\/feed\//,
             target: '/page/main.html'
-        },
+        }
+    ],
+    workers: [
         {
-            name: '关注页',
-            rule: /\/ttdiscuss\/v1\/brow\/find\//,
-            target: '/page/index/surround.html'   
+            on: false,
+            command: 'riot',
+            args: ['-w', 'tags', 'tags']
         }
     ]
 }
